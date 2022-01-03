@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+<title>Kontakt</title>
+</head>
+<body>
+    <div class="container">
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+        
+          
+          <div class="modal-content">
+            <div class="modal-header">
+              
+              <h4 class="modal-title">Obavestenje</h4>
+            </div>
+            <div class="modal-body">
+              <p>Uspesno ste popunili formu,čućemo se uskoro</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Zatvori dijalog</button>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top pozicija">
+        <a href="#home" class="navbar-hamburger"></a>
+         <button class="navbar-toggler" data-toggle="collapse" data-target="#navMenu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link a-link" href="index.html">Početna</a></li>
+                <li class="nav-item"><a class="nav-link a-link" href="onama.html">O nama</a></li>
+                <li class="nav-item"><a class="nav-link a-link" href="galerija.html">Galerija</a></li>
+                <li class="nav-item"><a class="nav-link a-link" href="#">Kontakt</a></li>
+             </ul>
+        </div>
+      </nav> 
+      </div>
+      <div class="jumbotron">
+        <div class="col-lg-6 col-sm-12 poruka"><p>Popunite formu kako bi vas lakše kontaktirali</p></div>
+          <div class="col-lg-6 col-sm-12">
+            <form class="kontakt">
+                
+                <div class="form-group">
+                  <label for="Prezime">Prezime</label>
+                  <input type="text" class="form-control" id="Prezime" placeholder="Prezime">
+                </div>
+                <div class="form-group">
+                    <label for="Email">E-mail adresa</label>
+                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Email" >
+                  </div>
+                  <div class="form-group">
+                    <label for="Sifra">Šifra</label>
+                    <input type="password" class="form-control" id="Password" placeholder="Sifra">
+                  </div>
+                <div class="form-group form-check">
+                    <label>Razlog vašeg kontaktiranja:</label><br>
+                  <input type="checkbox" class="form-check-input" id="Poseta">
+                  <label class="form-check-label" for="Poseta">Poseta</label>
+                  <br>
+                  <input type="checkbox" class="form-check-input" id="Sponzorstvo">
+                  <label class="form-check-label" for="Sponzorstvo">Sponzorstvo</label>
+                </div>
+                <div class="form-group">
+                  <label for="Sifra">Poruka</label>
+                  <textarea class="form-control" id="Poruka" placeholder="Napišite poruku..."></textarea>
+                </div>
+                <button type="button" class="btn btn-primary " data-toggle="modal" data-target="#myModal">Posalji</button>
+                <input type="reset" class="btn btn-primary" value="Obrisi">
+                
+              </form>
+          </div>
+         
+      </div>
+      <footer>
+        <div class="card footer">
+            
+            <div class="card-body">
+              <h5 class="card-title">Potražite nas na društvenim mrežama:</h5>
+              <p class="card-text"></p>
+              <a href="https://www.instagram.com/"  target="_blank"><img class="ikonice" src="slike/insta.png"/></a>
+              <a href="https://sr-rs.facebook.com/" target="_blank"><img class="ikonice" src="slike/face.png"/></a>
+              <a href="https://twitter.com/?lang=sr" target="_blank" ><img class="ikonice" src="slike/tweer.jpg"/></a>
+            </div>
+          </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>
